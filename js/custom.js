@@ -14,6 +14,16 @@ jQuery(document).ready(function(){
 	});
 	
 	jQuery('.accordion-container .accordion-item.item-open').find('.content-accordion').show();
+
+	jQuery('.call-history h2.title-history').click(function(){
+		jQuery('.call-history .list-call').slideToggle();
+	});
+
+	jQuery('.call-histories').show();
+
+	jQuery('.title-histories').click(function(){
+		jQuery('.call-histories').slideToggle();
+	});
 });
 
 jQuery(window).load(function(){
